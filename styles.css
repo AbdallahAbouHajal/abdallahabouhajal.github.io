@@ -2,17 +2,17 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  background-color: #1B7476; /* Dark Navy Blue */
+  background-color: #a99e9e; /* Dark Navy Blue */
   line-height: 1.6;
   font-weight: 400;
-  color: #FFFFFF; /* Off-White for text */
+  color: #000000; /* Off-White for text */
 }
 
 /* ----------------------------------------------
    Navigation Bar Styles
 ---------------------------------------------- */
 nav {
-  background-color: #141414; /* Darker navy for nav */
+  background-color: #2a1c48; /* Darker navy for nav */
   padding: 1rem 65%;
   position: fixed;
   top: 0;
@@ -49,12 +49,12 @@ nav a {
 }
 
 nav a:hover {
-  color: #91ffb9; /* Peach hover effect */
+  color: #6ec18d; /* Peach hover effect */
 }
 
 /* Active Menu Item Style */
 nav a.active {
-  color: #18ed51; /* Peach for active links */
+  color: #5a7a5d; /* Peach for active links */
 }
 
 /* Hamburger Menu */
@@ -73,7 +73,7 @@ nav a.active {
 .bar {
   width: 25px;
   height: 3px;
-  background-color: #FFFFFF;
+  background-color: #af7b7b;
   margin: 5px 0;
   transition: 0.4s;
 }
@@ -142,7 +142,7 @@ nav a.active {
 
 .right-column p {
   font-size: 1.1rem;
-  color: #FFFFFF; /* Slightly lighter gray */
+  color: #000000; /* Slightly lighter gray */
   margin-bottom: 1.5rem;
   text-align: justify;
 }

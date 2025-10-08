@@ -1,97 +1,86 @@
+<!-- =========================================================
+file: publications.html  (REPLACE your current file with this)
+========================================================= -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Publications</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdallah Abou hajal - Publications</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <style>
+    /* WHY: small additions without touching styles.css */
+    .metrics{display:flex;gap:1rem;flex-wrap:wrap;margin:.75rem 0;color:#555}
+    .metric{padding:.3rem .6rem;border:1px solid #e5e7eb;border-radius:.5rem}
+    .pub-list{display:grid;gap:1rem}
+  </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav>
-        <div class="hamburger">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="hamburger">
+      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+    </div>
+    <ul class="nav-menu">
+      <li><a href="index.html">About</a></li>
+      <li><a href="research.html">Current Research Directions</a></li>
+      <li><a href="publications.html" class="active">Publications</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- IMPORTANT: set your Scopus Author ID here -->
+    <div class="container" id="pub-app" data-author-id="58094444100">
+      <!-- Left Side -->
+      <div class="left-column">
+        <img src="images/image.png" alt="Your Name" class="profile-pic">
+        <h2>Abdallah Abou Hajal</h2>
+        <p>Abdallah.abouhhajal@gmail.com</p>
+        <div class="social-links">
+          <a href="https://scholar.google.com/citations?hl=en&user=1I8SvsQAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">
+            <img src="images/google-scholar.svg" alt="Google Scholar" class="social-icon">
+          </a>
+          <a href="https://www.linkedin.com/in/abdallah-abou-hajal/" target="_blank">
+            <img src="images/linkedin.svg" alt="LinkedIn" class="social-icon">
+          </a>
+          <a href="mailto:Abdallah.abouhhajal@gmail.com" target="_blank">
+            <img src="images/email.svg" alt="Email" class="social-icon">
+          </a>
         </div>
-        <ul class="nav-menu">
-            <li><a href="index.html">About</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="publications.html" class="active">Publications</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-        </ul>
-    </nav>
+      </div>
 
-    <!-- Main Content -->
-    <main>
-        <div class="container">
-            <!-- Left Side -->
-            <div class="left-column">
-                <img src="images/image.png" alt="Your Name" class="profile-pic">
-                <h2>Your Name</h2>
-                <p>PhD Scholar @ University</p>
-                <div class="social-links">
-                    <a href="https://scholar.google.com" target="_blank">
-                        <img src="images/google-scholar.svg" alt="Google Scholar" class="social-icon">
-                    </a>                    
-                    <a href="https://www.linkedin.com" target="_blank">
-                        <img src="images/linkedin.svg" alt="LinkedIn" class="social-icon">
-                    </a>
-                    <a href="https://mail.google.com/mail" target="_blank">
-                        <img src="images/email.svg" alt="Email" class="social-icon">
-                    </a>
-                </div>
-            </div>
+      <!-- Right Side - Publications (auto-rendered from JSON) -->
+      <div class="right-column publications-content">
+        <h2>Publications</h2>
 
-
-            <!-- Right Side - Publications -->
-            <div class="right-column publications-content">
-                <h2>Publications</h2> <!-- Main title for publications -->
-
-                <!-- Peer-reviewed Journal Papers and Books -->
-                <h3>Peer-reviewed Journal Papers and Books</h3>
-                <div class="publication-container alt-color-1">
-                    <h3>1. <strong>Journal Paper Title 1</strong></h3>
-                    <p>Author Name 1, Author Name 2</p>
-                    <p>Year - Journal Name</p>
-                    <a href="https://journal-link-1.com" class="publication-button" target="_blank">Read Paper</a>
-                </div>
-                <div class="publication-container alt-color-2">
-                    <h3>2. <strong>Book Title 1</strong></h3>
-                    <p>Author Name 1, Author Name 2</p>
-                    <p>Year - Publisher Name</p>
-                    <a href="https://book-link-1.com" class="publication-button" target="_blank">Read Paper</a>
-                </div>
-
-                <!-- Conference Proceedings -->
-                <h3>Conference Proceedings</h3>
-                <div class="publication-container alt-color-1">
-                    <h3>1. <strong>Conference Paper Title 1</strong></h3>
-                    <p>Author Name 1, Author Name 2</p>
-                    <p>Year - Conference Name</p>
-                    <a href="https://conference-link-1.com" class="publication-button" target="_blank">Read Paper</a>
-                </div>
-                <div class="publication-container alt-color-2">
-                    <h3>2. <strong>Conference Paper Title 2</strong></h3>
-                    <p>Author Name 1, Author Name 2</p>
-                    <p>Year - Conference Name</p>
-                    <a href="https://conference-link-2.com" class="publication-button" target="_blank">Read Paper</a>
-                </div>
-            </div>
+        <div class="metrics">
+          <span class="metric">Total: <strong id="m-total">—</strong></span>
+          <span class="metric">Citations: <strong id="m-cites">—</strong></span>
+          <span class="metric">h-index: <strong id="m-h">—</strong></span>
         </div>
-    </main>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Your Name, a fork of 
-            <a href="https://github.com/muhammedrashidx/ScholarSite" target="_blank" style="text-decoration: none; color: #b8aaaa; text-decoration: underline;">
-                ScholarSite
-            </a>
-        </p>
-    </footer>
+        <!-- JS will fill this with items styled like your originals -->
+        <div id="pub-list" class="pub-list" aria-live="polite"></div>
+      </div>
+    </div>
+  </main>
 
-    <script src="script.js"></script>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Abdallah Abou Hajal, a fork of
+      <a href="https://github.com/muhammedrashidx/ScholarSite" target="_blank" style="text-decoration: underline; color: #b8aaaa;">
+        ScholarSite
+      </a>
+    </p>
+  </footer>
+
+  <script src="/script.js"></script>
+  <!-- Renders publications from data/scopus/scopus.json -->
+  <script type="module" src="/assets/publications.js"></script>
+  <!-- If you keep your citation-badge script as a separate file, include it after publications.js -->
 </body>
 </html>

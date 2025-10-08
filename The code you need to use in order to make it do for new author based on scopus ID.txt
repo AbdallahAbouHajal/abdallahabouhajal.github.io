@@ -1,0 +1,1 @@
+py tools\scopus_fetcher.py --authors-file data\authors.csv --details --types "Article,Review,Editorial" --out data\scopus --combined data\scopus\scopus.json
